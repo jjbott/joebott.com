@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Scroll Wheel Fix for VB6 (and others!)</title>
+</head>
+
+<body>
+
+<table border="0" cellpadding="5" cellspacing="0" style="BORDER-COLLAPSE: collapse" width="100%">
+  <tr>
+    <td width="21%" valign="top">
+    <p align="""></p>
+    <p align="left"><a href="index.html">Home</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">Projects</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">
+    <a href="sneakyamp.htm">SneakyAmp</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">
+    <a href="Dicey.htm">Dicey</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">
+    <a href="glproject.htm">GLProject</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">
+    <a href="ADFtoMP3toADF.htm">ADFtoMP3toADF</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    VB6 Scroll Wheel Fix</p>
+    <p align="left">
+    <font face="Times New Roman"><a href="mailto:jbott@wi.rr.com">Email</a></font></p></td>
+    <td width="79%" valign="top">
+    <p align="left"></p>
+    <p align="""><b>Scroll Wheel Fix for VB6 (and others!)</b></p>
+    <p align="left">This is a small program that will make your mouse's scroll 
+    wheel work in various older programs - mainly Visual Basic 6's code window. I noticed a lot of people coming 
+    to this site from Google looking for help with their mouse wheel. So, I 
+    decided to fix it.</p>
+    <p align="left">It is possible to support many programs by adjusting its INI file. The included INI file includes support for:
+      	<ul>
+      		<li>VB6 Code Window</li>
+	        <li>VB6 Resource Design Window</li>
+	        <li>SourceSafe 6 Diff Viewer</li>
+	        <li>Windiff</li>
+	        <li>VBA Editor</li>
+    	</ul>
+	</p>
+	<p align="left">It also supports horizontal scrolling if your mouse supports it, or by holding CTRL while scrolling vertically.</p>
+	<p align="left">The scroll speed for each application can be adjusted by modifying the INI file. It should be fairly self explanitory: just edit the values for VertMsgCount and HorzMsgCount for your program's settings. Fractional values like 1.6 and negative values work just fine! Keep in mind that the program simulates clicking the arrows on a scrollbar, so entering a value of 0.1 will not give you more fine grained control. Instead you'll just have to scroll more to get 1 scroll message sent. But newer mice may work better with the fractional values.</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><b>Download the latest version:</b></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+	    Binaries: <a href="VB6ScrollwheelFix7.zip">VB6ScrollwheelFix7.zip</a></p>
+	    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+	    C++ Source: <a href="VB6ScrollWheelFixSource7.zip">VB6ScrollWheelFixSource7.zip</a></p>
+	    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><b>Installation:</b></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">    
+        Just unzip the files somewhere convenient for you. That's all! Delete them to uninstall.</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><br>If you're upgrading from an older version, exit out of the program and copy the new files over the old ones. Windows may not let you overwrite the DLL until all programs finally decide to release it.</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><b>History:</b></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">
+	    <b>3/7/2008:</b> I was asked to make a couple enhancements, and I went a little overboard. The program now has an INI that contains configuration options, supports multiple programs, supports mice that suport horizontal scrolling, and better follows Microsofts <a href=http://msdn2.microsoft.com/en-us/library/ms997498.aspx>Best Practices.</a>
+	</p>
+	    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> </p>
+	    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+	    Binaries: <a href="VB6ScrollwheelFix7.zip">VB6ScrollwheelFix7.zip</a></p>
+	    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+	    C++ Source: <a href="VB6ScrollWheelFixSource7.zip">VB6ScrollWheelFixSource7.zip</a></p>
+	    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">
+    <b>1/22/2004:</b> Yet another fix! If you split the window, the scroll wheel 
+    would only move the lower scrollbar. I fixed it by testing for a second 
+    visible vertical scrollbar, and testing the mouse's position against the top 
+    scrollbar's bottom edge</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> </p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    Binaries: <a href="VB6ScrollwheelFix4.zip">VB6ScrollwheelFix4.zip</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    C++ Source: <a href="VB6ScrollWheelFixSource4.zip">VB6ScrollWheelFixSource4.zip</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">
+    <b>1/17/2004:</b> I found that in certain cases the Control key "sticks". I 
+    noticed it mostly when using Ctrl-F to open the Find window. Since Ctrl-F 
+    opens a new window, my program was missing the Control key's KEY_UP message. 
+    Instead of modifying my code to catch all keyboard messages, I removed the 
+    keyboard hook portion completely. Since I only care about the 1 key, I just 
+    use GetAsyncKeyState(VK_CONTROL) which works better.</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> Binaries:
+    <a href="VB6ScrollWheelFix3.zip">VB6ScrollwheelFix3.zip</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    C++ Source: <a href="VB6ScrollwheelFixSource3.zip">VB6ScrollWheelFixSource3.zip</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">
+    <b>1/14/2004:</b> I was asked to slightly modify the program's behavior. 
+    Now, if you hold down the Control key, then the mouse's scroll wheel will 
+    affect the horizontal scrollbar instead of the vertical.</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> </p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    Binaries: <a href="VB6ScrollwheelFix2.zip">VB6ScrollwheelFix2.zip</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    C++ Source: <a href="VB6ScrollWheelFixSource2.zip">VB6ScrollWheelFixSource2.zip</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px">
+    <b>Old Version</b></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    Binaries: <a href="VB6ScrollWheelFix.zip">VB6ScrollwheelFix.zip</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    C++ Source: <a href="VB6ScrollWheelFixSource.zip">
+    VB6ScrollWheelFixSource.zip</a></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><b>Instructions:</b></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    Start up "VB6ScrollWheelFix.exe", and then use your mouse wheel in VB6. 
+    That's all! The program puts an icon in your task bar that looks like a red 
+    mouse. When you want to quit the program, right click the icon and choose 
+    "Quit".</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><b>How It Works:</b></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><b>
+    </b>Using Spy++, I found that the code windows were getting WM_MOUSEWHEEL 
+    events, but no WM_VSCROLL messages were being fired. So, I wrote a simple 
+    message hook that fires the scrolling events when it catches mouse wheel 
+    events.</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> I 
+    know from Spy++ that the code window's class is "VbaWindow", so I can use 
+    that to make sure that I only process those events. I just use the 
+    GetClassName function on each message's HWND, and ignore anything from 
+    anything but the VB6 code window. </p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    Then, I just need to send WM_VSCROLL messages to the window. But since the 
+    window's scrollbars have their own HWND, I need to find those first. So, I 
+    use the FindWindow function to find child windows with the class name "ScrollBar". 
+    If I find one, then I use GetWindowLong to retrieve the window's style. If 
+    the style has the SBS_VERT bit set, then I know I have the correct 
+    scrollbar. And that's it in a nutshell!</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    Also, I cheated and took a picture of my mouse for the program's icon. Hey, 
+    I'm no artist! But it looks nice! :)</p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"><b>To Do:</b></p>
+    <p align="left" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px"> 
+    The scroll wheel also doesn't work in the resource editing windows, with 
+    class name "DesignerWindow". But, while Spy++ shows WM_MOUSEWHEEL messages 
+    being sent to those windows, my program never gets them. If I can figure out 
+    why, it's simple to fire WM_VSCROLL messages for that window too.</p>
+    <p align="left"></p>
+    </td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-300935-1";
+urchinTracker();
+</script>
+</body>
+
+</html>

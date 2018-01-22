@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Home</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-300935-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+<table border="0" cellpadding="5" cellspacing="0" style="border-collapse: collapse" width="100%">
+  <tr>
+    <td width="21%" valign="top" height="1036">
+    <p align="center">&nbsp;</p>
+    <p align="left"><a href="index.html">Home</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">Projects</p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;
+    <a href="sneakyamp.htm">SneakyAmp</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp; Dicey</p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;
+    <a href="glproject.htm">GLProject</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;
+    <a href="ADFtoMP3toADF.htm">ADFtoMP3toADF</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;
+    <a href="vb6scrollwheel.htm">VB6 Scroll Wheel Fix</a></p>
+    <p align="left">
+    <font face="Times New Roman"><a href="mailto:jbott@wi.rr.com">Email</a></font></td>
+    <td width="79%" valign="top" height="1036">
+    &nbsp;<p>Dicey is a clone of the old Playstation game Devil Dice. The game 
+    is played on a grid of dice. The object is to match the value on the top of 
+    the dice by rolling and sliding the dice around. You need to match up two 
+    dice with a 2 value on top to make them sink. Likewise, three &quot;3&quot; dice will 
+    sink, four &quot;4&quot; dice will sink, and so on. Dice with a 1 will make all the 
+    1's sink when placed next to a die that is already sinking. It sounds 
+    complicated, but after a little practice it gets much easier.</p>
+    <p><b>Project Status:</b> On hold, possibly indefinitely. I've got too many 
+    other small projects, and there's no interest at all in this project.</p>
+    <p style="margin-top: 0; margin-bottom: 0"><b>What Needs to be Done:</b></p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - Verify 
+    movement rules. Seems to be finished, needs testing</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - Add 
+    game types. Only basic &quot;Go for high score&quot; game is implemented. 
+    I'll probably add the &quot;Kill each other players&quot; game type soon.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - 
+    Improve game levels. Currently, the level goes up when 30 dice are sunk. To 
+    increase difficulty with levels, the game will fill all the empty spaces 
+    except for (20-level) spaces. So, at level 20, it fills all the available 
+    spaces every pass. Somehow, I still managed to get to level 32 today...</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - 
+    Balance levels based on gameboard size as well as number of players</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - 
+    Implement special types of dice.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - Once 
+    game class is set, rewrite DirectX portion. Right now I'm only using very 
+    basic graphics, sound, and input, just to test the game class. I'll need to 
+    re-do most of it</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - Remove 
+    the dependence on DInput from the game class. I'm trying to make the base 
+    class as stand-alone as possible.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - 
+    Improve front end and score displays. Draw the die that the player is riding 
+    separate (like the original) so you can see hidden faces easier</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - 
+    Possibly add network code, to play over a LAN, or hopefully the internet</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - Find a 
+    graphic monkey that can do some simple 3d players and nicer dice, at the 
+    very least...</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; - Make 
+    AI rely less on rand()</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="margin-top: 0; margin-bottom: 0"><b>Downloads:</b></p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; Grab 
+    these at your own risk. Like I mentioned, I'm not even at alpha stages, so 
+    it can be very buggy.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceySource120303.zip">12/3/2003 Source Code</a> - I've 
+    decided to release my source. It's not as commented as I'd like, but 
+    hopefully someone will find it interesting and useful. Its almost entirely 
+    game logic, the graphics and sound portions are relatively basic.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; <b>Note:</b> 
+    These require DirectX 9. </p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceyV0.11.zip">5/14/2003 Build</a> - I've finally got all 
+    traces of random movement out of the AI. It might look like its running 
+    around at random sometimes, but it's actually following a computed path. But 
+    it is still full of bad logic, so it will do some strange things. Two AI 
+    players on a 7x7 board easily get past level 20 though (I saw a couple get 
+    to level 35!), so they do pretty well. Because of the lack of random 
+    movement, sometimes 2 or more AIs will start moving as a pack, so you'll 
+    have to shut off their AIs to split them up. Finally, there might be a crash 
+    bug hiding in it somewhere...</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceyV0.10.zip">5/5/2003 Build</a> - The AI now has a working 
+    brain. It not a smart brain, but it works great under the right 
+    circumstances. Try it out, again using 1-5 on your keyboard to toggle 
+    between Human and AI for each character. There may be a crash bug or two 
+    lurking in this version, also.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceyV0.9.zip">5/3/2003 Build</a> - Yep, finally, an update! 
+    I finally finished the framework for AI. Right now, you can toggle a 
+    player's AI by pressing their player number (1-5) on the keyboard. But, it's 
+    very very dumb AI, don't expect anything good yet. </p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; Also, I 
+    added in another game mode. The rules are the same as always, except that 
+    1s, 2s, and 3s don't do anything, ever. I call it &quot;Hardcore&quot;, but on my 
+    first try I got to level 19, so maybe its not hardcore enough... :) You can 
+    select this game type from the front end.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceyV0.8.zip">3/15/2003 Build</a> - I fixed the remaining 
+    movement glitch, I think that's pretty solid now. I fixed some sound bugs 
+    that caused sounds to be played twice sometimes. I added a few more sounds, 
+    and changed the &quot;Game Over&quot; sound. They sound much better, but still need 
+    work. Its pretty solid right now. I think adding game types is next...</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceyV0.7.zip">3/12/2003 Build</a> - I fixed the scripting I 
+    broke with the DirectInput stuff. I tweaked a lot of colors, and made the 
+    screen larger by default. While trying to get rid of the ugly black dots 
+    between dice I turned on bilinear texture filtering, and my frame rate 
+    improved. I guess I'll be keeping that. Probably a few other minor fixes 
+    too. It was a long, tiring week in San Jose...</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceyV0.06.zip">3/1/2003 Build</a> - I turned on lighting, 
+    which looks nice, but may crash some people. I use directional lights 
+    without checking to see if your card supports them. I don't think that's an 
+    issue though, if it was a point light I'd have to worry. DirectInput is working, and you can configure input for all 5 players. I 
+    only have a keyboard and 1 joystick though, so I cant be positive that it 
+    will work. I know that I can control 5 players with just my joystick though. 
+    :) I put my old player &quot;model&quot; in. Still needs a ton of tweaking, its far from 
+    polished. </p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceyV0.05.zip">2/20/2003 Build</a> - Can now record and 
+    playback games. I've added a sample game (my best ever!) that you can watch. 
+    Maybe it will give you a better idea of how to play, until I add more 
+    scripting for tutorials. The front end had more options added, so you can 
+    record and playback games. For now, it only uses one script, &quot;TestScript&quot;, 
+    that will be written over if you record a game. I also added a few new 
+    sounds. They're still not so great, but better than me talking I think.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceyV0.04.zip">2/16/2003 Build</a> - Basic front end is in place, 
+    and a level system is working.  If you can make it to level 20, you're 
+    pretty dang good. If you can make it to level 30, well, you wont get to 
+    level 30. :P You can select up to 5 players, but only players 1 and 2 are 
+    usable. Players 3-5 will just sit there.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; Also, I 
+    added an orthographic camera. Toggle between perspective and orthographic by 
+    hitting P. increase/decrease orthographic volume (zoom) with V and B. I cant 
+    decide which camera I like better. Perspective looks nice, but dice in back 
+    get hard to see. Orthographic is disorienting at first. Maybe once I get 
+    lighting in, the shading will make it better.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceyV0.03.zip">2/14/2003 Build</a> - Fixed Win98 bug. Started to 
+    work on a level system. Now, the game is much easier. So easy in fact, that 
+    you cant lose. The game will occasionally fill up the board so up to half of 
+    the board is covered. This has problems, as well, but at the very least its 
+    much easier to play.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/How_To_PlayV0.02.htm">How to Play</a> - Due to popular 
+    demand, I typed up some quick instructions. I hope they make sense. Its very 
+    hard to describe things without being able to show you in game. But I am 
+    working on in-game tutorials.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/DiceyV0.02.zip">2/10/2003 Build</a> - Player moves accurately 
+    now, including animation. Still much too hard, but the foundation of the 
+    basic game is there.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/Dicey_V.01.zip">2/3/2003 Build</a> - Includes very ugly 
+    sound. I talked into a microphone for some quick placeholder sound. I don't 
+    recommend playing it, its too annoying. :) Use the arrow keys to move player 
+    1, and WASD to move player 2. You can move the camera with the keys IKJLYH; 
+    IK for the y-axis, JL for the x-axis, and YH for the z-axis.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Dicey/dice.zip">Old version.</a> I made this a long time ago, but 
+    scrapped most of it. Because of the way I did things, it became very hard to 
+    tweak movement rules, and add features. I was focusing on graphics at the 
+    time, and adding a game to it while I learned. That didn't go well. :)</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="margin-top: 0; margin-bottom: 0"><b>Screenshots:</b></p>
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%">
+      <tr>
+        <td width="33%">
+        <p align="center"><a href="Dicey/DiceyV0.6.jpg">
+        <img border="0" src="Dicey/DiceyV0.6-thumb.jpg" width="128" height="91" alt="DiceyV0.6"></a></td>
+        <td width="33%">
+        <p align="center">
+        <a href="Dicey/Dicey_V0.1.jpg">
+        <img border="0" src="Dicey/Dicey_V0.1-thumb.jpg" width="128" height="93" alt="DiceyV0.1"></a></td>
+        <td width="33%">
+        <p align="center"><a href="Dicey/dice.jpg">
+        <img border="0" src="Dicey/dice-thumb.jpg" width="128" height="96" alt="Old Dicey"></a></td>
+      </tr>
+      <tr>
+        <td width="33%">
+        <p align="center">3/1/2003 build</td>
+        <td width="33%">
+        <p align="center">2/3/2003 build</td>
+        <td width="33%">
+        <p align="center">Old version</td>
+      </tr>
+    </table>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="margin-top: 0; margin-bottom: 0"><b>Project Diary:</b></p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    2/11/2003: It looks like I fixed the problem with Windows98. I'm amazed it 
+    worked at all on XP. I'm still having weird issues with VS.NET. I have 
+    problems disappear by commenting code, compiling, uncommenting the code, and 
+    recompiling. Going to start running things through VC6 when I hit a strange 
+    problem.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    2/14/2003: Started game level system. Need to make it so dice spawn, 
+    regardless of how full the board is, after a certain time. Started using CVS 
+    for source control. Now if only I could make it auto-increment my build 
+    number.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    2/14/2003 part2: It seems that I'm stealing a lot of CPU cycles somehow. 
+    Running Winamp and Dicey on a slower computer is interesting. Independently, 
+    they show almost no CPU use. Together, both of their CPU usage spikes. 
+    Bugger.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    2/15/2003: Huh, it seems drawing text with full transparency makes it so you 
+    cant see the text. Who'd have thought? :P</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    2/16/2003: The game actually seems like a game now. Still need to add a 
+    tutorial, but that'd involve adding some sort of scripting, and I've been 
+    putting that off. Still a movement graphic glitch I need to fix (smashed 
+    players look unsmashed for a sec when they move).</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    2/19/2003: I've got the basics of scripting in. I'm using the game to build 
+    script data, and then replaying it back. I actually got it to work halfway 
+    decent, but the way it runs now the replays only work for a few seconds. 
+    Then, because of differences in frame rates while recording and playing 
+    back, the player in the replay ends up diverging from what was recorded. I 
+    think I have a fix for that, but that's going to take some rewriting of my 
+    main game loop. So far it also only works if I make a game with 2 players, 
+    otherwise it crashes on a free(). Yay!</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; I've 
+    also redone some sounds. I made a new &quot;clunk&quot; by hitting my laptop case 
+    while my cheapo microphone was pointed on it. I made a new &quot;slide&quot; by 
+    sliding a box on my laptop case. I then processed the heck out of both using 
+    FruityLoops, so they don't sound quite as crummy. I got a new &quot;zap&quot; from 
+    some zappy sound I found online, and just adjusted its pitch a little and 
+    added a touch of reverb. And, it still sounds pretty bad. I guess I'm no 
+    sound engineer.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    2/20/2003: Holy cow, scripting works flawlessly. Although I only have 2 
+    script commands (make rising dice, and change player input), but thats 
+    enough to record a game and play it back. And it works! Holy beans.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    2/25/2003: Took a few days off, and played a lot of games. Bad me. Started 
+    working on DirectInput, so I can get joystick and gamepad support in. So 
+    far, Dinput says I have 2 mice. Hmm.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    2/28/2003: Got DirectInput working pretty well. Now I think you can actually 
+    play with 5 people, if you have enough controllers or can crowd around your 
+    keyboard. Enabled lighting, which looks nice, but will probably cause 
+    trouble. Put in my old player &quot;model&quot;. Found an ugly bug that allows players 
+    to move dice out form under other moving players, causing them to fall on 
+    the ground. That's no good...</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    3/10/2003: Spent last week at the Game Developers Conference. Noticed that I 
+    borked my scripting with the last update, and fixed it. Also fixed a 
+    movement glitch, and gave players a position offset so they don't draw on top 
+    of each other. Probably caught a couple other things while I was gone too. 
+    Started trying to make some nicer dice with free 3d tools. That's not going 
+    well... Maybe I'll work on music or something. Still need to fix one 
+    movement bug. You should be able to push players that on the floor with 
+    sliding dice. Currently, players in the way get smashed, and that looks 
+    odd...</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    3/12/2003: Still mostly working on making better assets. If anyone can 
+    recommend a decent 3d modeler that's free or cheap, let me know. I've been 
+    playing with <a href="http://www.blender3d.org">Blender</a>, and that's not 
+    going well. Just building a cube, texturing it, and exporting it to a useful 
+    format is like pulling teeth. Actually, pulling teeth is probably easier. I 
+    played with the
+    <a href="http://www.swissquake.ch/chumbalum-soft/ms3d/index.html">
+    Milkshape3D</a> trial version too, and its not nearly powerful enough. If I 
+    cant make a cube that is exactly centered at the origin, and exactly 1 unit 
+    cubed, then that's not powerful enough. Keyboard entry is a must, I cant do 
+    things freehand.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    4/22/2003: Woo, been a while since I updated. I've gotten sidetracked with 
+    other things for a while. I've been trying to beta test four games 
+    simultaneously, and trying to find places that need programmers. In the 
+    meantime, I've been thinking a lot about the direction of Dicey. I will 
+    finish it, but I don't think it will be nearly as full featured as the real 
+    Devil Dice game. There's nearly no interest in Dicey so far, so I'll 
+    probably just polish up the basic game, and maybe see about making some AI. 
+    Then I'll be on to my next project. But, it will get finished!</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    5/3/2003: Framework for the AI is in place, I just need to finish writing 
+    all the AI utility functions. Then maybe I can get to writing actual AI 
+    logic. Right now the AI picks a direction solely through the use of rand(). 
+    Its fun to set up a large game with 5 players, turn on all of their AI, see 
+    how far they get and who wins.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    5/5/2003: I've created a monster! My AI's brain is starting to work. Right 
+    now, the brain only knows how to make paths to positions that create a 
+    match. So, the AI will see if it can find a path, and if so follow it. 
+    Unfortunately, when finished it will fins a path from that position. So, if 
+    it finds another path, it will destroy the match it just made. I put in a 
+    quick hack so the AI will potentially leave newly created matches alone, but 
+    it is far from reliable.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; The AI 
+    will only knows how to roll dice to make matches. If it cant find a good 
+    path, or its on an unrollable die, or its on the floor, or anything else, it 
+    will move randomly. So, it still looks like a mess. But you can tell the AI 
+    is working. With 5 completely random AI's on a 7x7 board, I saw them get to 
+    level 13 on normal, and only level 1 on hardcore. With 5 new AI's on a 7x7 
+    board, they got to level 33 on normal, and level 10 on hardcore. Thats quite 
+    an improvement. Level 33 and over 3000 points isnt too shabby for AI that 
+    goes in a random direction over 80% of the time. Later I'll record myself 
+    playing against 4 AI, and see how poorly I do. </p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; <i>Edit</i>: 
+    I just finished a game with 4 AIs, in normal mode, on a 7x7 board. I beat 
+    them as far as points goes, with the closest AI having 3000 points less. 
+    But, we made it to level 71! There's a sure sign that the level system 
+    needs work... I should really use an 11x11 board with 5 players, at least.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    5/10/2003: I've been making progress on the AI, but I haven't released a new 
+    version because I've actually made it worse. If it doesn't get stuck, it 
+    does amazingly well. But it gets stuck a lot, moving back and forth over and 
+    over, and that needs to be fixed. I've also fixed a few crash bugs, and 
+    hopefully the last movement bug. </p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    5/12/2003: Well, the AI gets stuck a lot less. But, it still happens now and 
+    then. I have the AI keeping track of dice that it is matching up, but it 
+    seems like it's ignoring that list. It actually looks much more random now, 
+    even though it doesn't use rand() anymore. It still doesn't know how to get 
+    to a rising die, so if it gets stuck on the floor it will sit there. I've 
+    also got a new crash that has me confused. A few more days, and I should 
+    have a new release ready.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    5/14/2003: The AI does really well, but it still does some stupid things. 
+    Lots more work needs to be done. I think I'm almost at the point where I can 
+    focus on AI logic though. So far, I've been writing little tools that the AI 
+    will use in pretty basic ways. Once they're bug-free I can make the AI use 
+    them better.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; 
+    12/03/2003: I finally decided that this project is dead for a while. While 
+    I've always had ideas for improving it, I havent had the time or drive to 
+    implement them. There is virtually no interest anyways, which makes it hard 
+    to bother with it. Plus, Devil Dice 3 (Bombastic) was released in the US, so 
+    I have that to play, instead of being forced to write my own version. :)</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp; I've 
+    also put the source code up for download. Maybe it'll help someone.</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    </td>
+  </tr>
+</table>
+</body>
+
+</html>

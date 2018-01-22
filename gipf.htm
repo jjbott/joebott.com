@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>JoeBott.com Home</title>
+</head>
+
+<body>
+
+<table border="0" cellpadding="5" cellspacing="0" style="border-collapse: collapse" width="100%">
+  <tr>
+    <td width="21%" valign="top">
+    <p align="center">&nbsp;</p>
+    <p align="left"><a href="index.htm">Home</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">Projects</p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;
+    <a href="sneakyamp.htm">SneakyAmp</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;
+    <a href="Dicey.htm">Dicey</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;
+    <a href="glproject.htm">GLProject</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;
+    <a href="emailsuite.htm">Email Suite</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="emailsuite_Csharp.htm">C#</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="emailsuite_VB6.htm">Visual Basic 6</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="emailsuite_java.htm">Java</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;
+    <a href="ADFtoMP3toADF.htm">ADFtoMP3toADF</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;
+    <a href="vb6scrollwheel.htm">VB6 Scroll Wheel Fix</a></p>
+    <p align="left" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp; 
+    Gipf Project</p>
+    <p align="left"><a href="resume.htm">Resum<font face="Times New Roman">e</font></a><p align="left">
+    <font face="Times New Roman"><a href="mailto:jbott@wi.rr.com">Email</a></font></td>
+    <td width="79%" valign="top">
+    <p align="center">&nbsp;</p>
+    <p align="left">
+    I've decided to start creating the games in the
+    <a href="http://www.gipf.com/">Gipf Project</a> using Visual Basic 6, for 
+    practice. I'll chronicle my progress here, but I wont be providing binaries 
+    or source until I get permission from the creator of the games.<p align="left">
+    &nbsp;<p align="center">
+    <b>Tamsk</b><p align="center">
+    <a href="gipf/tamsk.gif">
+    <img border="0" src="gipf/smalltamsk.gif" width="327" height="232"></a><p align="left">
+    I started with the game <a href="http://www.gipf.com/tamsk/index.html">Tamsk</a>. 
+    The bulk of the project was finished in less than a day, although there is 
+    still much more work that could be done. All of the game is implemented 
+    except a 15-second timer used to limit player's turn times. The interface is 
+    fairly basic, but worked surprisingly well for my first attempt. Only 
+    hotseat gameplay is implemented, so after implementing most of the game I 
+    moved on after I got sick of playing against myself.<p align="left">
+    &nbsp;<p align="center">
+    Dvonn<p align="center">
+    <a href="gipf/dvonn.gif">
+    <img border="0" src="gipf/smalldvonn.gif" width="388" height="194"></a><p align="left">
+    Next I moved to <a href="http://www.gipf.com/dvonn/index.html">Dvonn</a>. 
+    This also took roughly a day to implement the bulk of the game, although it 
+    took a few more days to polish the interface and get network play working. 
+    The interface is still a bit ugly, but advances beyond the Tamsk interface 
+    include the display of pieces with valid moves, display of all valid moves 
+    from a position, and display of the last turn. It has the ability to host or 
+    join a network game, which seems to work pretty well. Again, more work could 
+    be done, but I decided to move on since at that point I didn't know if I'd 
+    be able to show the game to anyone besides myself.<p align="center">
+    &nbsp;<p align="center">
+    <b>Zertz</b><p align="center">
+    <a href="gipf/zertz.gif">
+    <img border="0" src="gipf/smallzertz.gif" width="294" height="204"></a><p align="left">
+    Next up is
+    <a href="http://www.gipf.com/zertz/index.html">Zertz</a>. While researching, 
+    I noticed that someone had already written a version of Zertz called
+    <a href="http://assimilate.int.webmatrixhosting.net/zf1/">ZF1</a>. I already 
+    wanted to improve my interface attempts, but ZF1 inspired me to start 
+    interface improvements with this project instead of waiting. I drew some 256x256 32bit graphics, which 
+    I scale and draw with alpha blending for anti-aliased edges. 
+    Unfortunately, that is serious overkill, since you cant really see the 
+    anti-aliasing when I shrink the images so much. The result is that it runs 
+    very slow on older computers, but dang does it look nice! Optimizing the 
+    graphics shouldn't be a problem though. I also wrote fairly robust hex-board 
+    drawing routines that should come in handy for the rest of the games. I can 
+    now resize the window and the board will always be centered and sized 
+    perfectly, with any shape board. As of now, it only plays a very basic 
+    &quot;beginner&quot; style game, but all that is needed to play more advanced styles 
+    of the game is to complete a configuration interface. There's no network play implementation yet, 
+    and there's still interface work to be done, but again I think I'm going to 
+    wait until I have permission to release my work before I put too much more 
+    work into it.<p align="left">
+    &nbsp;<p align="center">
+    <b>Yinsh</b><p align="center">
+    <a href="gipf/yinsh.gif">
+    <img border="0" src="gipf/smallyinsh.gif" width="306" height="272"></a><p align="left">
+    Most recently I've been working on
+    <a href="http://www.gipf.com/yinsh/index.html">Yinsh</a>. Again, it took 
+    about a day to get the gameplay roughed out. I decided to drop the fancy 
+    graphics of Zertz, and just work on the interface from a more basic level. 
+    It will be easy to drop in bitmapped graphics later on. Because of this, I 
+    didn't draw actual rings for the rings, those are the larger circles in the 
+    pictures. Handling multiple lines was an interesting challenge, but I think 
+    I worked out a pretty intuitive interface for line selection. I was thinking 
+    of animating the markers flipping over, but that'd take some graphic work, 
+    so I'd rather wait. Maybe I'll do it for the game's second pass.<p align="center">
+    <b>Gipf</b><p align="left">
+    I'm currently working on the design of
+    <a href="http://www.gipf.com/gipf/index.html">Gipf</a>. This is the only 
+    game where you can choose which type of game piece you want to use. So, I'm 
+    struggling to come up with something intuitive for game piece selection 
+    that's not too slow and clumsy. It gets even more complicated if I allow 
+    potentials as well. So I'm mostly working on other projects while I kick 
+    around ideas for this.</td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-300935-1";
+urchinTracker();
+</script>
+</body>
+
+</html>

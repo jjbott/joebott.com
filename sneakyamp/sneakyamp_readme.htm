@@ -1,0 +1,214 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>SneakyAmp Plug</title>
+</head>
+
+<body>
+
+<p><b>SneakyAmp Plug-In Version 2.0<br>
+Written By Joe Bott - jbott@wi.rr.com<br>
+<br>
+Short Description:</b><br>
+-SneakyAmp will allow you to control Winamp from within other programs. It 
+watches the keyboard, and acts on commands you type between two control strings.
+<br>
+<br>
+<b>Requirements:</b><br>
+I've personally tested SneakyAmp on Windows 98SE and XP, it should also work on 
+other versions. Besides that, your computer should be able to run Winamp 2. 
+Also, for best functionality your sound card should support multiple sound 
+streams - as most newer cards do. SneakyAmp *will not* work with Winamp 3, not 
+even with the fancy Winamp 2 plugin loader someone wrote. <br>
+<br>
+<b>How to get started and use the beast:</b><br>
+<br>
+After installation, SneakyAmp should show up in Winamp's general plug-in list. 
+Double-click SneakyAmp's entry to open the Options dialog for the first time.
+</p>
+<p><b><u>If you want to use SneakyAmp, you must enable it using the checkbox in 
+the upper corner of the options window</u></b></p>
+<p>Also, you'll want to change at least one thing, the &quot;Directory 1&quot; entry. Just 
+enter the path to your .mp3's directory. Also, make note of 2 items in the 
+options Dialog:<br>
+<br>
+&quot;Begin Command&quot;<br>
+-This is the string you use to start your input to SneakyAmp. It defaults to &quot;winamp&quot;. 
+I prefer using &quot;/&quot;, but I left the default as &quot;winamp&quot; to not confuse people who 
+still use defaults. <br>
+<br>
+&quot;End Command&quot;<br>
+-This is the string you use to end your input to SneakyAmp. This defaults to 
+double quotes (&quot;&quot;). Again, not the best choice, but for past users reading the 
+new docs, this was left as the default.</p>
+<p>Then just hit OK, and you should be set. Now, to test things out, hit 
+ctrl-shift-1. If you haven't changed the hotkey settings, and everything is 
+working okay, SneakyAmp will run off and scan your hard drive, and play some 
+songs. If not, double check that your mp3 directory is correct, that you've 
+checked the &quot;Enable SneakyAmp&quot; box, and that you actually have some songs to 
+play.</p>
+<p>Now, to actually play songs you want, you would type something like:<br>
+(Begin Command) play some song(End Command)<br>
+-or, with the defaults<br>
+winamp play some song&quot;&quot;<br>
+<br>
+With this, SneakyAmp will search your mp3 files for an .mp3 with the words 
+&quot;some&quot; and &quot;song&quot; in it. Basically, it will look for filenames that fit the 
+search key &quot;*some*song*.mp3&quot;, and play all of those songs in Winamp. </p>
+<p><b>Hotkeys:</b></p>
+<p style="margin-top: 0; margin-bottom: 0">Currently there are 15 different 
+hotkeys defined. The first five are similar to Winamp's defauly keys for the 
+main 5 buttons</p>
+<p style="margin-top: 0; margin-bottom: 0">Ctrl-Shift-Z - Previous Track</p>
+<p style="margin-top: 0; margin-bottom: 0">Ctrl-Shift-X - Play</p>
+<p style="margin-top: 0; margin-bottom: 0">Ctrl-Shift-C - Pause</p>
+<p style="margin-top: 0; margin-bottom: 0">Ctrl-Shift-V - Stop</p>
+<p style="margin-top: 0; margin-bottom: 0">Ctrl-Shift-B - Next Track</p>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p style="margin-top: 0; margin-bottom: 0">The other 10 hotkeys are defined by 
+clicking to Hotkeys button in the options menu. And example, &quot;play * rand 5&quot; for 
+ctrl-shift-1, is already defined. You use the commands explained in the next 
+section.</p>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p style="margin-top: 0; margin-bottom: 0"><b>Commands:</b><br>
+<br>
+play<br>
+-plays the songs it finds (Ex: winamp play super freak&quot;&quot;), or just hits the Play 
+button (Ex: winamp play&quot;&quot;)</p>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p style="margin-top: 0; margin-bottom: 0">list<br>
+-Opens a m3u file, and starts playing the songs it lists. (Ex: winamp list 
+goodsongs&quot;&quot; )<br>
+<br>
+add<br>
+-adds the songs it finds to the playlist (Ex: winamp add super freak&quot;&quot;)<br>
+<br>
+stop<br>
+-Stops Winamp (Ex: winamp stop&quot;&quot;)<br>
+<br>
+pause<br>
+-Pauses/Unpauses Winamp (Ex: winamp pause&quot;&quot;)<br>
+<br>
+next<br>
+-Skips to the next song in the playlist (Ex: winamp next&quot;&quot;)<br>
+<br>
+previous<br>
+-Skips to the previous song in the playlist (Ex: winamp prev&quot;&quot;)<br>
+<br>
+forward<br>
+-Jumps forward within a playing song a default amount (Ex: winamp forward&quot;&quot;) or 
+a specified amount in seconds (Ex: winamp forward 20”)<br>
+<br>
+rewind<br>
+-Jumps backwards within a playing song a default amount (Ex: winamp rewind&quot;&quot;) or 
+a specified amount in seconds (Ex: winamp rewind 20&quot;&quot;)<br>
+<br>
+volume<br>
+-Sets Winamp’s volume to a value from 0 to 255 (Ex: winamp volume 100&quot;&quot;)<br>
+<br>
+balance<br>
+-Sets Winamp’s balance to a value from -127 to 127 (Ex: winamp balance 0&quot;&quot;)<br>
+<br>
+shuffle<br>
+-Manipulates Winamp’s shuffle button. Either toggles it (Ex: winamp shuffle&quot;&quot;), 
+turns it on (Ex: winamp shuffle on&quot;&quot;), or turns it off (Ex: winamp shuffle 
+off&quot;&quot;).<br>
+<br>
+repeat<br>
+-Manipulates Winamp’s repeat button. Either toggles it (Ex: winamp repeat&quot;&quot;), 
+turns it on (Ex: winamp repeat on&quot;&quot;), or turns it off (Ex: winamp repeat off&quot;&quot;).<br>
+<br>
+random<br>
+-Used in conjunction with the add or play command, picks a specified number of 
+songs to play out of all the matches (Ex: winamp play * rand 10&quot;&quot; (plays any 10 
+random songs), winamp play jump rand 5&quot;&quot; (plays 5 randomly picked songs that 
+have 'jump' in the filename))<br>
+<br>
+<b>Trickier features:</b><br>
+<br>
+The Directory prefix<br>
+-Used in conjuction with the add and play commands for specifying which 
+directory to search in. For example, to play all the song in the directory 
+‘Frank’: winamp play * -frank&quot;&quot;. Or, to play a random 10 songs in the ‘Big Shoe’ 
+directory with ‘the’ in the filename: winamp play the rand 10 -big -shoe&quot;&quot;. 
+Yeah, its tricky, but you’ll get it. :)<br>
+<br>
+The 'Assume MP3 extenstion' checkbox<br>
+-All this checkbox in the options does is add .mp3 to your search key when using 
+the add or play command. For example, with the box checked `winamp play 
+bean&quot;&quot;will search for *bean*.mp3. Without the box checked it will search for 
+*bean*.* . Not really a tricky feature, but I didn’t know where to put it. :)<br>
+<br>
+The Partial Command Feature<br>
+-Wow, thats a bad name for a feature. Anyways, this just means that you dont 
+have to type in the whole command. For example, with the default settings, 'winamp 
+play&quot;&quot;', 'winamp pl&quot;&quot;', and 'winamp ay&quot;&quot;' all do the same thing. This is quite 
+handy for shortening command names once you've got the hang of SneakyAmp...<br>
+<br>
+<b>Miscellaneous:</b><br>
+<br>
+I have no idea what this program will do on non-English, non-American keyboard. 
+SneakyAmp only tracks the following characters:<br>
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&amp;*()`~-=[]\;',./_+{}|:&quot;?&gt;&lt; 
+and Enter<br>
+It also makes some assumptions about the placement of certain characters (Ex: 
+shift 3 = #, not £ like on British keyboards (or so I've been told))<br>
+<br>
+Things to take care of in future versions:</p>
+<p style="margin-top: 0; margin-bottom: 0">-Fix all the bugs I'm sure people 
+will find<br>
+-Probably add more functions. Maybe an Add List function, but I dont know what 
+I'd call it...</p>
+<p style="margin-top: 0; margin-bottom: 0">-See about adding volume changing 
+hotkeys. Its hard to get Winamp's current volume, so I cant tell winamp to, for 
+example, move the volume up by 10. I may just fake it.</p>
+<p style="margin-top: 0; margin-bottom: 0">-See about making the hotkeys more 
+customizable, like letting you use alt-F1 instead of ctrl-shift-1. If anyone 
+knows how to use the CHotkey control box in a non-MFC dialog, or how to create a 
+MFC dialog from within a non-MFC DLL, or how to create a Winamp 2 plugin 
+completely in MFC, let me know! Probably not worth the effort. :)</p>
+<p style="margin-top: 0; margin-bottom: 0">-Clean up options menu some. <br>
+-Get the dang snkyamphook.dll out of Winamp’s base directory and into the plugin 
+directory. Still don’t know why that wont work...</p>
+<p style="margin-top: 0; margin-bottom: 0">-Look into supporting Winamp 3. I'll 
+wait until they actually publish some documentation beyond lists of function 
+names though. But so far I dont even know if I can get Windows Messages from 
+Winamp 3 <br>
+-Clean up my messy code<br>
+-Rewrite the docs to include everything that I'm forgetting...<br>
+-Probably more...<br>
+<br>
+Version History:</p>
+<p style="margin-top: 0; margin-bottom: 0">V2.0beta - Added hotkeys and list 
+command. Cleaned things up a lot</p>
+<p style="margin-top: 0; margin-bottom: 0">V1.0c - Fixed problem with Windows XP<br>
+V1.0 - Got all functions working properly (I hope)<br>
+Added ‘About’ dialog<br>
+Rewrote command handling routines to make my life easier<br>
+Finally rewrote these docs<br>
+V 0.7 - Rewrote the whole dang thing, making it a Winamp plug-in<br>
+Got basic functions working<br>
+Quick PIMPed it and put it on my webspace for someone who was looking for a new 
+version.<br>
+V 0.5 - First kinda public release. I only told a handful of people about it, 
+somehow lots more found it. :)<br>
+<br>
+<br>
+<b>Disclaimer:</b><br>
+I take no responsibilty if this program somehow erases your hard drive, blows up 
+your monitor, makes your sound card smell funny, or otherwise mess up your 
+system in any way. This program is in the beta stages, so use it at your own 
+risk. I've done everything I can to ensure it wont do anything strange, but I'm 
+(still) new to Windows programming and I want to cover my ass.<br>
+<br>
+<br>
+If you play EQ, stop by Veeshan and say &quot;Hi!&quot; to Nalinie. Thats me. :)<br>
+&nbsp;</p>
+
+</body>
+
+</html>
